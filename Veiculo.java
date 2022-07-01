@@ -53,3 +53,29 @@ public class Veiculo {
 	}
 	
 }
+
+class Carro extends Veiculo {
+	private int codigo;
+	private String modelo;
+	private String cor;
+
+	public Carro(int codigo, String modelo, String cor, int qtdRodas, int qtdPassageiros) {
+		super(qtdRodas, qtdPassageiros);
+		this.codigo = codigo;
+		this.modelo = modelo;
+		this.cor = cor;
+	}
+
+	public int getCodigo() {
+		return this.codigo;
+	}
+
+	public String getModelo() {
+		return this.modelo;
+	}
+
+	public String getCor() {
+		return this.cor;
+	}
+
+}
